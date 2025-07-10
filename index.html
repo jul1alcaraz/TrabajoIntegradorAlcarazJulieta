@@ -1,11 +1,46 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Radiologia_1</title>
+  </head>
+  <body>
+    <h1 id="titulo">Catedra de Radiologia 1</h1>
+
+    <div>
+      <button class="explicacion" onclick="explicacion()">
+        <h2>Nuestro proposito</h2>
+      </button>
+    </div>
+    <h1 class="sub">Elegi la zona de estudio</h1>
+    <div id="listaOpciones" class="lista">
+      <button class="mmii" onclick="ingresarMmii()">Miembro Inferior</button>
+      <button class="mmss" onclick="ingresarMmss()">Miembro Superior</button>
+      <button class="columna" onclick="ingresarColumna()">Columna</button>
+      <button class="torso" onclick="ingresarTorso()">Torso</button>
+      <button class="craneo" onclick="ingresarCraneo()">Craneo</button>
+    </div>
+
+    <div>
+      <img
+        id="imagenmmii"
+        src="http://www.l3ortopedia.es/sec_din/archivos/imgs/niveles_de_amputacion_del_miembro_inferior-16657470390.jpg"
+        alt="Imagen de Miembro Inferior"
+      />
+    </div>
+
+    <div>
+      <h1 id="titulo">
+        ¿Nos falto alguna imagén radiologica en particular? ¡Dinos cual!
+      </h1>
+      <form id="formularioFaltante">
+        <input type="text" id="inputFaltante" placeholder="Escribe aqui..." />
+        <button type="submit" id="botonFaltante" class="enviar">Enviar</button>
+      </form>
+    </div>
+    <div id="listaFaltantes" class="lista"> ¡Proximamente! </div>
+  </body>
+  <script src="script.js"></script>
 </html>
